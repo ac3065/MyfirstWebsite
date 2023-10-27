@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Many browsers already use 
+    box-sizing: border-box; for many form elements
+     (but not all - which is why inputs and text areas look different at width: 100%;).
+    Applying this to all elements is safe and wise;*/
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px; 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-text-color); 
+}
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+
+}
+/* utility class */
+.small-bold-text { /* Set div text to two steps heavier than normal
+     but less than a standard bold. */ 
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+.container {
+    max-width: 1180px;/* means maximum width taken by the content */
+    margin-inline: auto;/* makes the content in center or to give both left and right margin at  a time */
+    padding-inline:var(--padding-inline-section);
+}
+.flex {
+    flex-basis: 730px;
+    display: flex;
+    align-items: center;
+}
+/*top banner*/
+.top-banner {
+    background-color: #4fb3d4;
+}
+.banner-text {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+/* nav bar*/
+.main-nav {
+margin-top: 20px;
+justify-content: space-between;
+}
+ul{
+    list-style: none;
+}
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+.company-logo img {
+    width: 95px;
+}
+.hover-link {
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+.hover-link:hover {
+    color:var(--accent-color);
+}
+.primary-button {
+background-color: var(--accent-color);
+border-radius: 6px;
+font-weight: 700;
+color:white !important;
+padding:12px 24px;
+box-shadow: 0 0 2px var(--secondary-text-color);
+transition: 0.2s  ease-out;
+}
+.primary-button:hover {
+background-color: var(--accent-color-dark);
+}
+.secondary-button {
+border: 0.5px solid var(--secondary-text-color);
+border-radius: 6px;
+font-weight:700;
+color: var(--primary-text-color) !important;
+padding: 12px 24px;
+transition:0.2s ease-out;
+}
+.secondary-button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+.header-left{
+    max-width: 40vw;
+}
+.header-left h1{
+    margin-top: 20px;
+}
+.header-right{
+    width: 40px;
+}
+.companies-header{
+    margin-block: 30px;
+    color:var(--primary-text-color);
+    text-align: center;
+}
+.logos{
+    align-items: center;
+    width: 250px;
+    justify-content: space-between;
+}
+.gh{
+    flex-grow: 3;
+}
+.features-section{
+    padding: 30px var(--padding-inline-section) 0;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb81j-5gbMg6mS8fTEVVjzYUa1hx-DZ6553w&usqp=CAU);
+}
+.features-header, .examples-header{
+    text-align: center; 
+    gap:20px;
+ 
+}
+.features-heading-text{
+    margin-bottom: 20px;
+}
+.hello{
+    width: 40px;
+    height: 3%;
+}
+.features-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width:30% ;
+    text-align: center;
+}
+.features-area{
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+
+.hello5{
+    height: 50px;
+    width: 100px;
+}
+.feature-description{
+    margin-top: 20px;
+    padding: 20px;
+}
+.feature-img{
+    margin-top: 100px;
+    background-image: url;
+}
+.feature-img2{
+    height:30px;
+    width:24px;
+}
+/* examples section */
+.examples-heading-text{
+    margin-bottom:20px ;
+}
+.examples-card{
+    width: 23%;
+    position:relative;
+    min-height: 300px;
+    background:black;
+    background-image: url();
+}
+.card-text{
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    color:white;
+}
+.examples-card{
+    width:23%;
+    position: relative;
+    min-height:300px;
+    background: black;
+    background-image: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(https://blog.hubspot.com/hubfs/bold-italicize-text-in-html.png);
+     background-size: cover;
+}
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left:20px;
+    right:20px;
+    color:white;
+}
+.examples-area{
+    justify-content: space-between;
+    margin-block: 30px;
+}
+/* to hover image as we use the poiniter over it*/
+.examples-card:hover{
+    box-shadow: 0 0 10px #888588;
+    transition: 0.2 ease-out;
+}
+/* CTA SECTION */
+.cta-section-container{
+    flex-direction: column;/* text will come one below the another */
+    gap: 30px;
+    color:white;
+    
+}
+.cta-section{
+    padding: 120px var(--padding-inline-section) 80px;
+    background-color: #183b54;
+}
+.cta-section-container p {
+    color:white;
+    margin-top:20px;
+} 
+/* footer */
+.link-column {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+.footer-container{
+    align-items: flex-start;
+    justify-content: space between;
+}
+.subfooter {
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+.subfooter-container{
+    justify-content: center;
+     gap: 30px;
+}
